@@ -10,6 +10,7 @@ int main()
 	Czlowiek* c1;
 	c1 = new Kierownik;
 	std::vector<Czlowiek*> lista_pracownikow;
-
 	c1->dodajPracownika(lista_pracownikow);
+	
+
 }
