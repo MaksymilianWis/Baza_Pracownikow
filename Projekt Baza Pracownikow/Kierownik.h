@@ -4,17 +4,17 @@
 #include "FileOperator.h"
 #include "vector"
 
-
 class Kierownik : virtual public Czlowiek
 {
 private:
 	int licba_pracownikow_;
-	std::vector<Czlowiek*> lista_podpracownikow_;
+	//std::vector<Czlowiek*> lista_podpracownikow_;
 public:
 	Kierownik() : licba_pracownikow_(0) {};
 	~Kierownik() {};
 
-	virtual bool dodajPracownika(FileOperator<Czlowiek*> op, std::vector<Czlowiek*>& lista_pracownikow)
+
+	virtual bool dodajPracownika(std::vector<Czlowiek*>& lista_pracownikow)
 	{
 		
 		//INTERFACE
@@ -23,7 +23,7 @@ public:
 			std::cout << "Podaj id: ";
 			std::cin >> this->id_;
 			std::cout << std::endl;
-		} while (op.checkId<Czlowiek*>(this->id_));
+		} while (this->checkId(lista_pracownikow));
 		std::cout << "Podaj imie: ";
 		std::cin >> this->imie_;
 		std::cout << "\nPodaj nazwisko: ";
@@ -35,7 +35,7 @@ public:
 		std::cout << "\nPodaj liczbe podpracownikow: ";
 		std::cin >> this->licba_pracownikow_;
 
-		op.ListaPracownikow.push_back(this);
+		lista_pracownikow.push_back(this);
 
 		return 1;
 	}

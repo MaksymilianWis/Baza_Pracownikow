@@ -1,31 +1,4 @@
-﻿  FileOperator.h
-C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\Czlowiek.h(20,31): error C2061: syntax error: identifier 'FileOperator'
-C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\FileOperator.h(16,18): error C3861: 'ListaPracownikow': identifier not found
-C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\FileOperator.h(14,7): message : This diagnostic occurred in the compiler generated function 'bool FileOperator::checkId(int)'
-C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\FileOperator.h(16,18): error C2065: 'ListaPracownikow': undeclared identifier
-C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\FileOperator.h(14,7): message : This diagnostic occurred in the compiler generated function 'bool FileOperator::checkId(int)'
+﻿  Czlowiek.h
   main.cpp
-C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\Czlowiek.h(20,31): error C2061: syntax error: identifier 'FileOperator'
-C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\FileOperator.h(16,18): error C3861: 'ListaPracownikow': identifier not found
-C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\FileOperator.h(14,7): message : This diagnostic occurred in the compiler generated function 'bool FileOperator::checkId(int)'
-C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\FileOperator.h(16,18): error C2065: 'ListaPracownikow': undeclared identifier
-C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\FileOperator.h(14,7): message : This diagnostic occurred in the compiler generated function 'bool FileOperator::checkId(int)'
-C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\Kierownik.h(17,43): error C2143: syntax error: missing ')' before '<'
-C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\Kierownik.h(17,43): error C2143: syntax error: missing ';' before '<'
-C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\Kierownik.h(17,43): error C2059: syntax error: '<'
-C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\Kierownik.h(17,100): error C2059: syntax error: ')'
-C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\Kierownik.h(18,2): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
-C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\main.cpp(11,20): error C2259: 'Kierownik': cannot instantiate abstract class
-C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\Kierownik.h(8,7): message : see declaration of 'Kierownik'
-C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\main.cpp(11,20): message : due to following members:
-C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\main.cpp(11,20): message : 'bool Czlowiek::dodajPracownika(void)': is abstract
-C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\Czlowiek.h(20,15): message : see declaration of 'Czlowiek::dodajPracownika'
-C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\main.cpp(11,7): error C2259: 'Kierownik': cannot instantiate abstract class
-C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\Kierownik.h(8,7): message : see declaration of 'Kierownik'
-C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\main.cpp(11,7): message : due to following members:
-C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\main.cpp(11,7): message : 'bool Czlowiek::dodajPracownika(void)': is abstract
-C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\Czlowiek.h(20,15): message : see declaration of 'Czlowiek::dodajPracownika'
-C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\main.cpp(14,4): error C2660: 'Czlowiek::dodajPracownika': function does not take 2 arguments
-C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\Czlowiek.h(20,15): message : see declaration of 'Czlowiek::dodajPracownika'
-C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\main.cpp(14,4): message : while trying to match the argument list '(FileOperator, std::vector<Czlowiek *,std::allocator<Czlowiek *>>)'
   Generating Code...
+  Projekt Baza Pracownikow.vcxproj -> C:\Users\maksy\Desktop\Projekt Baza Pracownikow\x64\Debug\Projekt Baza Pracownikow.exe
