@@ -7,10 +7,10 @@
 class Kierownik : virtual public Czlowiek
 {
 private:
-	int licba_podpracownikow_;
+	int liczba_podpracownikow_;
 	std::vector<Czlowiek*> lista_podpracownikow_;
 public:
-	Kierownik() : licba_podpracownikow_(0) {};
+	Kierownik() : lista_podpracownikow_(0) {};
 	~Kierownik() {};
 
 
@@ -33,34 +33,28 @@ public:
 		std::cout << "\nPodaj wysokosc wynagrodzenia: ";
 		std::cin >> this->wynagrodzenie_;
 		std::cout << "\nPodaj liczbe podpracownikow: ";
-		std::cin >> this->licba_podpracownikow_;
+		std::cin >> this->liczba_podpracownikow_;
 
 		lista_pracownikow.push_back(this);
 
 		return 1;
 	}
-	virtual bool usunPracownika(int id, std::vector<Czlowiek*> vector) //znaleziono = 1	
+	virtual bool usunPracownika(std::vector<Czlowiek*> vector) //znaleziono = 1	
 	{
-		
-		for (std::vector<Czlowiek*>::iterator it = vector.begin(); it != vector.end();)
-		{
-			
-			if ((*it)->id_ == id)
-			{
-				(*it).
-
-				it = vector.erase(it);
-				return 1;
-			}
-			else
-			{
-				it++;
-			}
-		}
-		std::cout << "Nie znalezionow pracownika" << std::endl;
+		//this->lista_podpracownikow_.erase();
 		return 0;
 	};
 	virtual bool szukajPracownika(int id) { return 0; };
 	virtual bool zmienDane(int id) { return 0; };
+
+	virtual bool drukowanie(std::vector<Czlowiek*> lista_pracownikow)
+	{
+		for (auto i : lista_pracownikow)
+		{
+			std::cout << "ID: " << i->id_ << "\n";
+			std::cout << "Imie i nazwisko: " << i->imie_ << " " << i->nazwisko_ << "\n";
+			std::cout << "Wynagrodzenie: " << i->wynagrodzenie_ << "\n";
+		}
+	}
 	
 };

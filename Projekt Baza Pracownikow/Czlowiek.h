@@ -18,9 +18,10 @@ public:
 	~Czlowiek() = default;
 
 	virtual bool dodajPracownika(std::vector<Czlowiek*>& lista_pracownikow) = 0;
-	virtual bool usunPracownika(int id, std::vector<Czlowiek*> vector) = 0;
+	virtual bool usunPracownika(std::vector<Czlowiek*> vector) = 0;
 	virtual bool szukajPracownika(int id) = 0;
 	virtual bool zmienDane(int id) = 0;
+	virtual bool drukowanie(std::vector<Czlowiek*> lista_pracownikow) = 0;
 
 	template <typename T>
 	bool checkId(std::vector<T>& vector) // istnieje = 1
