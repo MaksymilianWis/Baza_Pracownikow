@@ -10,7 +10,7 @@ private:
 	int liczba_podpracownikow_;
 	std::vector<Czlowiek*> lista_podpracownikow_;
 public:
-	Kierownik() : lista_podpracownikow_(0) {};
+	Kierownik() : liczba_podpracownikow_(0) {};
 	~Kierownik() {};
 
 
@@ -34,6 +34,7 @@ public:
 		std::cin >> this->wynagrodzenie_;
 		std::cout << "\nPodaj liczbe podpracownikow: ";
 		std::cin >> this->liczba_podpracownikow_;
+		std::cout << std::endl;
 
 		lista_pracownikow.push_back(this);
 
@@ -46,15 +47,21 @@ public:
 	};
 	virtual bool szukajPracownika(int id) { return 0; };
 	virtual bool zmienDane(int id) { return 0; };
-
-	virtual bool drukowanie(std::vector<Czlowiek*> lista_pracownikow)
+	virtual bool drukujJednego(std::vector<Czlowiek*> lista_pracownikow)
+	{
+		std::cout << "numer id: " << this->id_ << "\n";
+		std::cout << "imie i nazwisko: " << this->imie_ << " " << this->nazwisko_ << "\n";
+		std::cout << "wynagrodzenie: " << this->wynagrodzenie_ << "\n";
+		std::cout << "liczba podpracownikow:" << this->liczba_podpracownikow_ << "\n";
+		return 1;
+	}
+	virtual bool drukujWszystkich(std::vector<Czlowiek*> lista_pracownikow)
 	{
 		for (auto i : lista_pracownikow)
 		{
-			std::cout << "ID: " << i->id_ << "\n";
-			std::cout << "Imie i nazwisko: " << i->imie_ << " " << i->nazwisko_ << "\n";
-			std::cout << "Wynagrodzenie: " << i->wynagrodzenie_ << "\n";
+			i->drukujJednego(lista_pracownikow);
 		}
+		return 1;
 	}
 	
 };
