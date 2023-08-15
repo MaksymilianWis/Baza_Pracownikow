@@ -6,6 +6,8 @@
 
 class Kierownik : virtual public Czlowiek
 {
+	friend FileOperator;
+
 private:
 	int liczba_podpracownikow_;
 	std::vector<Czlowiek*> lista_podpracownikow_;
@@ -13,10 +15,31 @@ public:
 	Kierownik() : liczba_podpracownikow_(0) {};
 	~Kierownik() {};
 
-
-	virtual bool dodajPracownika(std::vector<Czlowiek*>& lista_pracownikow)
+	virtual bool debugDodajPracownika(std::vector<Czlowiek*>& lista_pracownikow, int debug_nr)
 	{
-		
+		//INTERFACE
+		std::cout << "Podaj id: AUTO ";
+		this->id_ = debug_nr;
+		std::cout << "Podaj imie: AUTO";
+		this->imie_ = "imie";
+		std::cout << "\nPodaj nazwisko: AUTO";
+		this->nazwisko_ = "nazwisko";
+		std::cout << "\nPodaj date (dd;mm;yyyy): AUTO";
+		this->data_urodzenia_ = "00;00;0000";
+		std::cout << "\nPodaj wysokosc wynagrodzenia: AUTO";
+		this->wynagrodzenie_ = 0;
+		std::cout << "\nPodaj liczbe podpracownikow: AUTO";
+		this->liczba_podpracownikow_ = 0;
+		std::cout << std::endl;
+
+		lista_pracownikow.push_back(this);
+
+		return 1;
+	}
+
+	virtual bool dodajPracownika(std::vector<Czlowiek*>&lista_pracownikow)
+	{
+
 		//INTERFACE
 		do
 		{
@@ -39,15 +62,26 @@ public:
 		lista_pracownikow.push_back(this);
 
 		return 1;
-	}
+	};
 	virtual bool usunPracownika(std::vector<Czlowiek*> vector) //znaleziono = 1	
 	{
 		//this->lista_podpracownikow_.erase();
 		return 0;
 	};
-	virtual bool szukajPracownika(int id) { return 0; };
+	virtual Czlowiek* szukajPracownika(int id, std::vector<Czlowiek*> lista_pracownikow) 
+	{
+		for (auto i : lista_pracownikow)
+		{
+			if (i->id_ == id)
+			{
+				return i;
+			}
+		}
+		std::cout << "Nie znaleziono pracownika" << std::endl;
+		return 0;
+	};
 	virtual bool zmienDane(int id) { return 0; };
-	virtual bool drukujJednego(std::vector<Czlowiek*> lista_pracownikow)
+	virtual bool drukujJednego(std::vector<Czlowiek*> lista_pracownikow) // zamiast to przeci¹zyæ <<
 	{
 		std::cout << "numer id: " << this->id_ << "\n";
 		std::cout << "imie i nazwisko: " << this->imie_ << " " << this->nazwisko_ << "\n";

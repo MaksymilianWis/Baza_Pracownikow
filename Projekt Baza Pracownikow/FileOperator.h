@@ -9,7 +9,6 @@ class FileOperator
 
 public:
 
-
 	
 };
 
