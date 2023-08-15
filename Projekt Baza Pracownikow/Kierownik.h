@@ -37,7 +37,7 @@ public:
 		return 1;
 	}
 
-	virtual bool dodajPracownika(std::vector<Czlowiek*>&lista_pracownikow)
+	virtual bool dodajPracownika(std::vector<Czlowiek*>& lista_pracownikow)
 	{
 		//INTERFACE
 		this->dodajCzlowieka(lista_pracownikow);
@@ -50,14 +50,20 @@ public:
 
 		return 1;
 	};
-	virtual bool usunPracownika(int id, std::vector<Czlowiek*> &lista_pracownikow) //znaleziono = 1	
+	virtual bool usunPracownika(int id, std::vector<Czlowiek*>& lista_pracownikow) //znaleziono = 1	
 	{
-		
+		int id_nowy_kierownik;
+		Czlowiek* it_kierownik_do_usuniecia = this->szukajPracownika(id, lista_pracownikow);
+		std::cout << "Podaj id kierownia do przepisania listy podpracownikow: ";
+		std::cin >> id_nowy_kierownik;
+		Czlowiek* it_nowy_kierownik = this->szukajPracownika(id_nowy_kierownik, lista_pracownikow);
+
+
 		Kierownik* ptr = dynamic_cast<Kierownik*>(this->szukajPracownika(id, lista_pracownikow));
-		
-		for(auto i : ptr->lista_podpracownikow_) //DODAJ OPERATOR VECTOR + VECTOR // dodaj wybor kierownika do napisania podpracownikow
+
+		for (auto i : ptr->lista_podpracownikow_) //DODAJ OPERATOR VECTOR + VECTOR // dodaj wybor kierownika do napisania podpracownikow
 		{
-			dynamic_cast<Kierownik*>(lista_pracownikow[0])->lista_podpracownikow_.push_back(i);
+			dynamic_cast<Kierownik*>(it_nowy_kierownik)->lista_podpracownikow_.push_back(i);
 		}
 		auto it = std::remove(lista_pracownikow.begin(), lista_pracownikow.end(), ptr);
 		lista_pracownikow.erase(it, lista_pracownikow.end());
@@ -65,7 +71,7 @@ public:
 
 		return 1;
 	};
-	virtual Czlowiek* szukajPracownika(int id, std::vector<Czlowiek*> lista_pracownikow) 
+	virtual Czlowiek* szukajPracownika(int id, std::vector<Czlowiek*> lista_pracownikow)
 	{
 		for (auto i : lista_pracownikow)
 		{
@@ -94,5 +100,4 @@ public:
 		}
 		return 1;
 	}
-	
 };
