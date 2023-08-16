@@ -1,2 +1,11 @@
-﻿  main.cpp
+﻿  Czlowiek.cpp
+  Czlowiek.h
+  FileOperator.h
+  Kierownik.cpp
+  main.cpp
+  Technik.cpp
+  Technik.h
+  Generating Code...
+x64\Debug\Czlowiek.obj : warning LNK4042: object specified more than once; extras ignored
+x64\Debug\Technik.obj : warning LNK4042: object specified more than once; extras ignored
   Projekt Baza Pracownikow.vcxproj -> C:\Users\maksy\Desktop\Projekt Baza Pracownikow\x64\Debug\Projekt Baza Pracownikow.exe

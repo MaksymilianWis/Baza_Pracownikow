@@ -37,10 +37,10 @@ public:
 		return 1;
 	}
 
-	virtual bool dodajPracownika(std::vector<Czlowiek*>& lista_pracownikow)
+	virtual bool dodajPracownika(std::vector<Czlowiek*>& lista_pracownikow, int miss)
 	{
 		//INTERFACE
-		this->dodajCzlowieka(lista_pracownikow);
+		this->dodajCzlowieka(lista_pracownikow, miss);
 
 		std::cout << "\nPodaj liczbe podpracownikow: ";
 		std::cin >> this->liczba_podpracownikow_;
@@ -83,7 +83,11 @@ public:
 		std::cout << "Nie znaleziono pracownika" << std::endl;
 		return 0;
 	};
-	virtual bool zmienDane(int id) { return 0; };
+	virtual bool zmienDane(int id, std::vector<Czlowiek*> lista_pracownikow)//blad z petla checkId
+	{
+		this->szukajPracownika(id, lista_pracownikow)->dodajPracownika(lista_pracownikow, 1);
+		return 1;
+	};
 	virtual bool drukujJednego(std::vector<Czlowiek*> lista_pracownikow) // zamiast to przeci¹zyæ <<
 	{
 		std::cout << "numer id: " << this->id_ << "\n";

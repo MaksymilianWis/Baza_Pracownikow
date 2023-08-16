@@ -21,8 +21,11 @@ int main()
 	c3->debugDodajPracownika(lista_pracownikow, 3);
 	c1->drukujWszystkich(lista_pracownikow);
 	std::cout << c1->wynagrodzenie_ << std::endl;
-	c1->usunPracownika(2, lista_pracownikow);
+	//c1->usunPracownika(2, lista_pracownikow);
 	std::cout << "///////////////////////////////" << std::endl;
+	//c1->drukujWszystkich(lista_pracownikow);
+
+	c1->zmienDane(1, lista_pracownikow);
 	c1->drukujWszystkich(lista_pracownikow);
 
 
