@@ -21,7 +21,7 @@ public:
 
 	virtual bool dodajPracownika(std::vector<Czlowiek*>& lista_pracownikow, int miss) = 0;
 	virtual bool usunPracownika(int id, std::vector<Czlowiek*>& lista_pracownikow) = 0;
-	virtual Czlowiek* szukajPracownika(int id, std::vector<Czlowiek*> lista_pracownikow) = 0;
+	//virtual Czlowiek* szukajPracownika(int id, std::vector<Czlowiek*> lista_pracownikow) = 0;
 	virtual bool zmienDane(int id, std::vector<Czlowiek*> lista_pracownikow) = 0;
 	virtual bool drukujJednego(std::vector<Czlowiek*> lista_pracownikow) = 0;
 	virtual bool drukujWszystkich(std::vector<Czlowiek*> lista_pracownikow) = 0;

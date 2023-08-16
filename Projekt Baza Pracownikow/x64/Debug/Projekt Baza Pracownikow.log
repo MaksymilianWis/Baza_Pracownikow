@@ -1,11 +1,59 @@
-﻿  Czlowiek.cpp
-  Czlowiek.h
-  FileOperator.h
-  Kierownik.cpp
+﻿  Czlowiek.h
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\FileOperator.h(15,9): error C2143: syntax error: missing ';' before '*'
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\FileOperator.h(15,9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\FileOperator.h(15,57): error C2059: syntax error: '>'
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\FileOperator.h(16,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\FileOperator.h(16,1): error C2059: syntax error: '{'
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\FileOperator.h(16,1): error C2143: syntax error: missing ';' before '{'
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\FileOperator.h(16,1): error C2447: '{': missing function header (old-style formal list?)
   main.cpp
-  Technik.cpp
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\Technik.h(60,20): error C2248: 'Kierownik::lista_podpracownikow_': cannot access private member declared in class 'Kierownik'
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\Kierownik.h(13,25): message : see declaration of 'Kierownik::lista_podpracownikow_'
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\Kierownik.h(7,7): message : see declaration of 'Kierownik'
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\Technik.h(62,47): error C2248: 'Kierownik::lista_podpracownikow_': cannot access private member declared in class 'Kierownik'
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\Kierownik.h(13,25): message : see declaration of 'Kierownik::lista_podpracownikow_'
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\Kierownik.h(7,7): message : see declaration of 'Kierownik'
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\Technik.h(72,9): error C2039: 'szukajPracownika': is not a member of 'Technik'
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\Technik.h(8,7): message : see declaration of 'Technik'
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\Technik.h(80,50): error C2039: 'liczba_podpracownikow_': is not a member of 'Technik'
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\Technik.h(8,7): message : see declaration of 'Technik'
   Technik.h
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\FileOperator.h(15,9): error C2143: syntax error: missing ';' before '*'
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\FileOperator.h(15,9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\FileOperator.h(15,57): error C2059: syntax error: '>'
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\FileOperator.h(16,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\FileOperator.h(16,1): error C2059: syntax error: '{'
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\FileOperator.h(16,1): error C2143: syntax error: missing ';' before '{'
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\FileOperator.h(16,1): error C2447: '{': missing function header (old-style formal list?)
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\Kierownik.h(56,41): error C2664: 'int *szukajPracownika(int,unknown-type &)': cannot convert argument 2 from 'std::vector<Czlowiek *,std::allocator<Czlowiek *>>' to 'unknown-type &'
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\FileOperator.h(15,11): message : see declaration of 'szukajPracownika'
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\Kierownik.h(56,41): message : while trying to match the argument list '(int, std::vector<Czlowiek *,std::allocator<Czlowiek *>>)'
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\Kierownik.h(59,33): error C2664: 'int *szukajPracownika(int,unknown-type &)': cannot convert argument 2 from 'std::vector<Czlowiek *,std::allocator<Czlowiek *>>' to 'unknown-type &'
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\FileOperator.h(15,11): message : see declaration of 'szukajPracownika'
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\Kierownik.h(59,33): message : while trying to match the argument list '(int, std::vector<Czlowiek *,std::allocator<Czlowiek *>>)'
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\Kierownik.h(62,45): error C2664: 'int *szukajPracownika(int,unknown-type &)': cannot convert argument 2 from 'std::vector<Czlowiek *,std::allocator<Czlowiek *>>' to 'unknown-type &'
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\FileOperator.h(15,11): message : see declaration of 'szukajPracownika'
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\Kierownik.h(62,45): message : while trying to match the argument list '(int, std::vector<Czlowiek *,std::allocator<Czlowiek *>>)'
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\Kierownik.h(77,3): error C2664: 'int *szukajPracownika(int,unknown-type &)': cannot convert argument 2 from 'std::vector<Czlowiek *,std::allocator<Czlowiek *>>' to 'unknown-type &'
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\FileOperator.h(15,11): message : see declaration of 'szukajPracownika'
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\Kierownik.h(77,3): message : while trying to match the argument list '(int, std::vector<Czlowiek *,std::allocator<Czlowiek *>>)'
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\Technik.h(52,41): error C2664: 'int *szukajPracownika(int,unknown-type &)': cannot convert argument 2 from 'std::vector<Czlowiek *,std::allocator<Czlowiek *>>' to 'unknown-type &'
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\FileOperator.h(15,11): message : see declaration of 'szukajPracownika'
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\Technik.h(52,41): message : while trying to match the argument list '(int, std::vector<Czlowiek *,std::allocator<Czlowiek *>>)'
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\Technik.h(55,32): error C2664: 'int *szukajPracownika(int,unknown-type &)': cannot convert argument 2 from 'std::vector<Czlowiek *,std::allocator<Czlowiek *>>' to 'unknown-type &'
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\FileOperator.h(15,11): message : see declaration of 'szukajPracownika'
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\Technik.h(55,32): message : while trying to match the argument list '(int, std::vector<Czlowiek *,std::allocator<Czlowiek *>>)'
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\Technik.h(58,45): error C2664: 'int *szukajPracownika(int,unknown-type &)': cannot convert argument 2 from 'std::vector<Czlowiek *,std::allocator<Czlowiek *>>' to 'unknown-type &'
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\FileOperator.h(15,11): message : see declaration of 'szukajPracownika'
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\Technik.h(58,45): message : while trying to match the argument list '(int, std::vector<Czlowiek *,std::allocator<Czlowiek *>>)'
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\Technik.h(60,20): error C2248: 'Kierownik::lista_podpracownikow_': cannot access private member declared in class 'Kierownik'
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\Kierownik.h(13,25): message : see declaration of 'Kierownik::lista_podpracownikow_'
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\Kierownik.h(7,7): message : see declaration of 'Kierownik'
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\Technik.h(62,47): error C2248: 'Kierownik::lista_podpracownikow_': cannot access private member declared in class 'Kierownik'
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\Kierownik.h(13,25): message : see declaration of 'Kierownik::lista_podpracownikow_'
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\Kierownik.h(7,7): message : see declaration of 'Kierownik'
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\Technik.h(72,9): error C2039: 'szukajPracownika': is not a member of 'Technik'
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\Technik.h(8,7): message : see declaration of 'Technik'
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\Technik.h(80,50): error C2039: 'liczba_podpracownikow_': is not a member of 'Technik'
+C:\Users\maksy\Desktop\Projekt Baza Pracownikow\Projekt Baza Pracownikow\Technik.h(8,7): message : see declaration of 'Technik'
   Generating Code...
-x64\Debug\Czlowiek.obj : warning LNK4042: object specified more than once; extras ignored
-x64\Debug\Technik.obj : warning LNK4042: object specified more than once; extras ignored
-  Projekt Baza Pracownikow.vcxproj -> C:\Users\maksy\Desktop\Projekt Baza Pracownikow\x64\Debug\Projekt Baza Pracownikow.exe

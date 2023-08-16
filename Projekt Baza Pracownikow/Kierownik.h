@@ -53,13 +53,13 @@ public:
 	virtual bool usunPracownika(int id, std::vector<Czlowiek*>& lista_pracownikow) //znaleziono = 1	
 	{
 		int id_nowy_kierownik;
-		Czlowiek* it_kierownik_do_usuniecia = this->szukajPracownika(id, lista_pracownikow);
+		Czlowiek* it_kierownik_do_usuniecia = szukajPracownika(id, lista_pracownikow);
 		std::cout << "Podaj id kierownia do przepisania listy podpracownikow: ";
 		std::cin >> id_nowy_kierownik;
-		Czlowiek* it_nowy_kierownik = this->szukajPracownika(id_nowy_kierownik, lista_pracownikow);
+		Czlowiek* it_nowy_kierownik = szukajPracownika(id_nowy_kierownik, lista_pracownikow);
 
 
-		Kierownik* ptr = dynamic_cast<Kierownik*>(this->szukajPracownika(id, lista_pracownikow));
+		Kierownik* ptr = dynamic_cast<Kierownik*>(szukajPracownika(id, lista_pracownikow));
 
 		for (auto i : ptr->lista_podpracownikow_) //DODAJ OPERATOR VECTOR + VECTOR // dodaj wybor kierownika do napisania podpracownikow
 		{
@@ -71,21 +71,10 @@ public:
 
 		return 1;
 	};
-	virtual Czlowiek* szukajPracownika(int id, std::vector<Czlowiek*> lista_pracownikow)
-	{
-		for (auto i : lista_pracownikow)
-		{
-			if (i->id_ == id)
-			{
-				return i;
-			}
-		}
-		std::cout << "Nie znaleziono pracownika" << std::endl;
-		return 0;
-	};
+	
 	virtual bool zmienDane(int id, std::vector<Czlowiek*> lista_pracownikow)//blad z petla checkId
 	{
-		this->szukajPracownika(id, lista_pracownikow)->dodajPracownika(lista_pracownikow, 1);
+		szukajPracownika(id, lista_pracownikow)->dodajPracownika(lista_pracownikow, 1);
 		return 1;
 	};
 	virtual bool drukujJednego(std::vector<Czlowiek*> lista_pracownikow) // zamiast to przeci¹zyæ <<

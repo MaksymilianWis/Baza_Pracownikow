@@ -28,5 +28,4 @@ int main()
 	c1->zmienDane(1, lista_pracownikow);
 	c1->drukujWszystkich(lista_pracownikow);
 
-
 }
